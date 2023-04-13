@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Nahuel Londono | Software Developer Montreal">
+ 	<meta name="keywords" content="HTML,CSS,JavaScript,Java,C++">
+  	<meta name="author" content="Nahuel Londono">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+ 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>Nahuel Londono | Software Developer Montreal</title>
+	 
+	<link rel="stylesheet" type ="text/css"	href="css/ionicons.min.css">
+	<link rel="stylesheet" type ="text/css"	href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/navBar.js"></script>
+	<script src="js/typed.js"></script>
+
+	<script src="php/contact.php"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+	<header>
+		<!--  Navigation Bar  -->
+		<nav>
+			<div class="logo-section">
+				<img class="logo" src="img/NL_LOGO3.png" width="60%"> </img>
+				<!-- <a class="logo" href="#about">NAHUEL <font color="#3c6e4b">LONDONO</font></a> -->
+				<button class="hb-button"> <i class="fa fa-bars"> </i> </button>
+			</div>
+	
+			<ul>
+				<li><a href="index-fr.html"><font color="#ffaf69">Français</font></a></li>
+				<li><a href="#apropos">About</a></li>
+				<li><a href="#apropos">Subscription</a></li>
+				<li><a href="#apropos">Commercial</a></li>
+				<li><a href="#apropos">Residential</a></li>
+			</ul>
+
+		</nav>
+	
+	</header>
+
+	<!-- Home Page -->
+	<a id="home"></a>
+	<section class="intro">
+		<div class="inner">
+			<div class="content">
+				<h1><font color="#ffaf69">Meet</font>Cie</h1>
+				<h2>// <span id="typing-text"></span></h2>
+				<!--<h2 id="typing-text">//</h2>-->
+				<a href="#skills"><div class="arrow">&#10094;</div></a>
+				<!-- <a href="#skills"><i class="ion-chevron-down"></i></a> -->
+				<!--<a class="btn" href="#skills"><font color="#3c6e4b">></font>Look around</a>-->
+			</div>
+		</div>
+		
+		<script>
+			var typed = new Typed('#typing-text', {
+				strings: ['Based in Montreal^1000'],
+				typeSpeed: 100,
+				backSpeed: 50,
+				smartBackspace: true, // this is a default
+				loop: true
+			  });
+		</script>
+		
+	</section>
+
+
+	<!-- About Section -->
+	<!--
+	<a id="about"></a>
+	<div class="about">
+		<h1>//About</h1>
+
+		<div class="col-left">
+			<br><img src="img/me.png" alt="my photo">
+		</div>
+
+		<div class="col-right">
+			<h2>NAHUEL <font color="#468f5c">LONDONO</font></h2>
+			<p>Hello, I'm a sophomore Computer Science Student at Université de Montréal with 3+ years of experience in software development.</p>
+			<p>I'm currently working as a software developer intern for Loncar Technologies Inc.</p>
+
+			<br>
+			<a class="hire-me" href="#contact">>Contact me</a>
+		</div>
+	</div>
+
+
+
+	<!-- Skills Section -->
+	<!--
+	<a id="skills"></a>
+	<div class="skills-heading"> 
+		<h1>//Skills</h1>
+		<h2> These are the skills I have both acquired through academic education as well as personal  interest. </h2>
+	</div>
+
+	<div class="skills-section"> 
+		<div class="skills-column">
+			<i class="ion-code-working"></i>
+			<h1>Programming</h1>
+			<h2>C++ <br> C# <br> Java <br> JavaScript <br> Python <br> MySQL <br></h2>
+		</div>
+
+		<div class="skills-column">
+			<i class="ion-ios-world-outline"></i>
+			<h1>Web</h1>
+			<h2>HTML5 <br> CSS <br> JQuery <br> Bootstrap <br> Php <br> XML <br> AJAX </h2>
+		</div>
+
+		<div class="skills-column">
+			<i class="ion-android-color-palette"></i>
+			<h1>Design</h1>
+			<h2>Gimp/Photoshop<br> Inkscape <br> Google Sketchup <br> Unity <br><br><br></h2>
+		</div>
+	</div>
+
+	<!-- Projects Section -->
+	<!--
+	<a id="projects"></a>
+	<div class="projects-section">
+		<h1>//Projects</h1>
+
+		<div class="col-left">
+			<a href="https://github.com/nahuelfl/RobotFindsKitten" title="RobotFindsKitten Game">
+				<img src="img/RobotFindsKitten.png"/>
+				<p class="text-over">
+					<br><br>
+					RobotFindsKitten game remake using Java
+					<br><br>Game features:<br><br>◦ 2D Sprites<br>◦ Console game<br>◦ Random object generator<br><br>
+					<i>Program developed in an academic context at <font color="#4f78ff">Université de Montréal</font></i>
+				</p>
+			</a>
+			
+			<a href="https://github.com/nahuelfl/Node.js-Game" title="Node Runner Game">
+				<img src="img/NodeGame.png"/>
+				<p class="text-over">
+					<br><br>
+					Lode runner inspired game created using JS
+					<br><br>Game features:<br><br>◦ 2D Simple graphics<br>◦ Browser game<br>◦ AI solver available<br><br>
+					<i>Program developed in an academic context at <font color="#4f78ff">Université de Montréal</font></i>
+				</p>
+			</a>
+
+			<a href="https://github.com/nahuelfl/consoleGame" title="C++ Game">
+				<img src="img/GameConsole.png"/>
+				<p class="text-over">
+					<br><br>
+					Simple console game created using C++
+					<br><br>Game features:<br><br>◦ ASCII graphics<br>◦ Console game<br>◦ Game statistics available<br><br>
+					<i>Program developed in an academic context at <font color="#ff8346">Cégep du Vieux-Montréal</font></i>
+				</p>
+			</a>
+
+		</div>
+
+		<div class="col-right">
+			<a href="https://github.com/nahuelfl/ColorSwitch" title="ColorSwitch Game">
+				<img src="img/ColorSwitch.png"/>
+				<p class="text-over">
+					<br><br>
+					ColorSwitch game remake using JavaFX
+					<br><br>Game features:<br><br>◦ JavaFX GUI<br>◦ Console game<br>◦ 10 Amusing levels<br><br>
+					<i>Program developed in an academic context at <font color="#4f78ff">Université de Montréal</font></i>
+				</p>
+			</a>
+
+			<a href="https://github.com/nahuelfl/Maze-Generator" title="Maze Generator">
+				<img src="img/MazeGenerator.png"/>
+				<p class="text-over">
+					<br><br>
+					Random maze generator and solver JS
+					<br><br>Program features:<br><br>◦ Developped on codeBoot interface<br>◦ Labyrinth size modifiable<br>◦ AI solver available<br><br>
+					<i>Program developed in an academic context at <font color="#4f78ff">Université de Montréal</font></i>
+				</p>
+			</a>
+
+			<a href="https://github.com/nahuelfl/Inventory-System-C-" title="Inventory System">
+				<img src="img/BankingSystem.png"/>
+				<p class="text-over">
+					<br><br>
+					Sports shop inventory system C++
+					<br><br>Program features:<br><br>◦ Console application<br>◦ Creates files for clients<br>◦ Strict input validation<br><br>
+					<i>Program developed in an academic context at <font color="#ff8346">Cégep du Vieux-Montréal</font></i>
+				</p>
+			</a>
+
+		</div>
+
+		<h2>To take a look at any of my project's source codes, please click on the images!</h2>
+		
+	</div>
+
+
+	<!-- Contact Section -->
+	<!--
+	<a id="contact"></a>
+	<div class="contact-section">
+		<h1>//Contact</h1>
+  		<form action="php/contact.php" method="POST">
+
+   			<label for="fname">Name</label><br>
+    		<input type="text" id="name" name="name" placeholder="Your name..."><br>
+   		 	<label for="email">Email</label><br>
+    		<input type="text" id="email" name="email" placeholder="Your email..."><br>
+			<label for="country">Country</label><br>
+			<select id="country" name="country">
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select><br>
+			<label for="message">Message</label><br>
+			<textarea id="message" name="message" placeholder="Please write here..." style="height:50px"></textarea><br>
+
+			<div class="g-recaptcha" data-sitekey="6Ld767EUAAAAAOjpM4tjBUbtjOmoO5BKLDRTW4FI"></div>
+
+			<input type="submit" value=">Submit" name="submit">
+			
+  		</form>
+	</div>
+	
+	<footer>
+		<br><img src="favicon.ico" height="50px"> <br><br>
+	
+		<small>&copy; Developed by Nahuel Londono</small> <br>
+		<small><font color="#d3d3d3">Last update made in December 2018</font></small>
+
+		<div class="social">
+			<a href="https://github.com/nahuelfl"><i class="ion-social-github"></i></a>
+			<a href="mailto:nahuelfl@hotmail.com "><i class="ion-email"></i></a>
+			<a href="https://www.linkedin.com/in/nahuel-londono"><i class="ion-social-linkedin"></i></a>
+		</div>
+	</footer>
+</body>
+
+</html>
